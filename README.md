@@ -12,13 +12,13 @@ Chức năng **bắt buộc**:
 
 * [ ] Người dùng có thể vào trang Contact Us và Menu
 * [ ] Người dùng có thể thấy thông tin liên lạc nhóm tại trang Contact Us
-* [ ] Người dùng có thể xem vị trí theo địa chỉ của nhóm trên bảng đồ (tích hợp google map)
+* [x] Người dùng có thể xem vị trí theo địa chỉ của nhóm trên bảng đồ (tích hợp google map)
 * [ ] Khi vào trang Menu, người dùng có thể xem danh sách các sản phẩm theo từng danh mục (phải thêm ít nhất 4 danh mục)
 * [ ] Khi nhấn vào mỗi danh mục sẽ xem danh sách các sản phẩm trong danh mục đó
 * [ ] Người dùng được phép nhập tên sản phẩm vào ô tìm kiếm để tìm kiếm sản phẩm theo tên
-* [ ] Mỗi sản phẩm bao gồm các thông tin sau: tên, giá, hình ảnh, mô tả
+* [x] Mỗi sản phẩm bao gồm các thông tin sau: tên, giá, hình ảnh, mô tả
 * [ ] Người dùng có thể sắp xếp kết quả trả về theo a-z, giá thấp đến cao, giá cao đến thấp
-* [ ] Người dùng có thể nhấn vào mỗi sản phẩm và xem thông tin chi tiết của sản phẩm đó
+* [x] Người dùng có thể nhấn vào mỗi sản phẩm và xem thông tin chi tiết của sản phẩm đó
 * [ ] Người dùng có thể nhấn nút "Đặt mua" khi xem sản phẩm trong danh sách hoặc chi tiết để chuyển đến trang đặt hàng với thông tin sản phẩm đã đặt
 * [ ] Người dùng có thể nhấn nút "Thêm vào giỏ hàng" để thêm sản phẩm vào giỏ hàng. Sau khi thêm vào giỏ hàng, người dùng sẽ thấy thông tin giỏ hàng được cập nhật
 * [ ] Người dùng có thể xem giỏ hàng và nhấn nút "đặt mua" để đặt hàng sản phẩm của mình. Lúc này hệ thống sẽ chuyển người dùng đến trang đặt hàng với thông tin các sản phẩm trong giỏ hàng (số lượng, đơn giá)
