@@ -29,10 +29,10 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="/products">Home</a></li>
-        <li><a href="/products/<%rand_prod=@products.sample() if @contact.present?%><%=rand_prod.id if @contact.present?%>">Random Products</a></li>
+        <li><a href="/products/<%rand_prod=@products.sample() if @products.present?%><%=rand_prod.id if @products.present?%>">Random Products</a></li>
         <li><a href="/products/new">New product</a></li>
         <li><a href="#">Stores</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="/contact">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
@@ -44,14 +44,7 @@
 
     <%= yield %>
 
-    <div class="container">
-      <h1>Location</h1>
-      <p><a href="http://hcmus.edu.vn/">Trường khoa học tự nhiên</a></p>
-      <iframe width="1000" height="450" src="//www.google.com/maps/embed/v1/place?q=University+of+Science,+Downtown+Campus+227+Nguyễn+Văn+Cừ
-      &zoom=15
-      &key=AIzaSyA-1miY4lBv82LfuJSvYIj2sM0gnZCJpkw">
-  </iframe>
-    </div>
+    
     <footer class="footer">
       <div class="container text-center">
         <p class="text-muted"> Made by <a href="mailto:nguyenvanthanhtu@gmail.com?Subject=Hello">Thanh Tú</a> and Hùng Duy</p>
