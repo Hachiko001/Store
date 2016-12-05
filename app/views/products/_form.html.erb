@@ -12,7 +12,7 @@
   <% end %>
 <form>
   <div class="col-xs-5 container">
-    <input type='file' onchange="readURL(this);" class="btn btn-info"/>
+    <%= f.file_field :image, onchange:"readURL(this)", class:"btn btn-info",accept: 'image/png,image/jpeg,image/jpg' %>
     <% if @product.image.nil?
           product_image="Product1.jpg"
         else
