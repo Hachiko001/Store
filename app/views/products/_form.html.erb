@@ -10,8 +10,40 @@
       </ul>
     </div>
   <% end %>
-
-  <div class="field">
+<form>
+  <div class="col-xs-5 container">
+    <%= f.file_field :image, onchange:"readURL(this)", class:"btn btn-info",accept: 'image/png,image/jpeg,image/jpg' %>
+    <% if @product.image.nil?
+          product_image="Product1.jpg"
+        else
+          product_image = @product.image
+        end
+    %>
+    <%=image_tag product_image, height: '300', width: '300', class:"img-responsive", id:"blah"%>
+  </div>
+  <div class="col-xs-7 container">
+      <div class="form-group">
+        <%= f.label :name,"Name:" %>
+        <%= f.text_field :name, class:"form-control"%>
+      </div>
+      <div class="form-group">
+        <%= f.label :price,"Price:" %>
+        <%= f.number_field :price, class:"form-control"%>
+      </div>
+      <div class="form-group">
+        <%= f.label :name,"Description:" %>
+        <%= f.text_area :description, class:"form-control"%>
+      </div>
+      <div class="form-group">
+        <%= f.label :quantity,"Number of new product:" %>
+        <%= f.number_field :quantity, class:"form-control"%>
+      </div>
+      <div class="actions">
+        <%= f.submit %>
+      </div>
+    </div>
+</form>
+  <!--<div class="field">
     <%= f.label :name %>
     <%= f.text_field :name %>
   </div>
@@ -43,5 +75,5 @@
 
   <div class="actions">
     <%= f.submit %>
-  </div>
+  </div>-->
 <% end %>
