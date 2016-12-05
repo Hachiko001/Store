@@ -5,9 +5,13 @@
   <p>Name: Mai Hùng Duy</p>
   <p>Tel: 123456789</p>
 
-  <h3>Leave us your email</h3>
-  <
-
+  <%= form_for @client do |f| %>
+    <h3>Do you want to get awesome deals from us?</h3>
+    <p>Your name: <%= f.label :name %></p>
+    <h3>Leave us your email</h3>
+    <%= f.email_field :email %>
+    <%= f.submit %>
+  <% end %>
     <h1>Location</h1>
     <p><a href="http://hcmus.edu.vn/">Trường khoa học tự nhiên</a></p>
     <iframe width="1000" height="450" src="//www.google.com/maps/embed/v1/place?q=University+of+Science,+Downtown+Campus+227+Nguyễn+Văn+Cừ

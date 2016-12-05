@@ -4,39 +4,42 @@
     <title>Store</title>
     <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+    <script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.0/jquery-ui.min.js"></script>
+
   </head>
 
   <body>
-    <div class="jumbotron">
-  <div class="container text-center">
+    <div class      ="jumbotron">
+  <div class        ="container text-center">
     <h1>Online Store</h1>
     <p>Buy stuff with the best value</p>
   </div>
 </div>
 
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
+<nav class          ="navbar navbar-inverse">
+  <div class        ="container-fluid">
+    <div class      ="navbar-header">
+      <button type  ="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class ="icon-bar"></span>
+        <span class ="icon-bar"></span>
+        <span class ="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class      ="navbar-brand" href="#">Logo</a>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li class="active"><a href="/products">Home</a></li>
-        <li><a href="/products/<%rand_prod=@products.sample() if @products.present?%><%=rand_prod.id if @products.present?%>">Random Products</a></li>
-        <li><a href="/products/new">New product</a></li>
-        <li><a href="#">Stores</a></li>
-        <li><a href="/contact">Contact</a></li>
+    <div class      ="collapse navbar-collapse" id="myNavbar">
+      <ul class     ="nav navbar-nav">
+        <li class   ="active"><a href="/products">Home</a></li>
+        <li><a href ="/products/<%rand_prod=@products.sample() if @products.present?%><%=rand_prod.id if @products.present?%>">Random Products</a></li>
+        <li><a href ="/products/new">New product</a></li>
+        <li><a href ="#">Stores</a></li>
+        <li><a href ="/contact">Contact</a></li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
-        <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+      <ul class     ="nav navbar-nav navbar-right">
+        <li><a href ="#"><span class="glyphicon glyphicon-user"></span> Your Account</a></li>
+        <li><a href ="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
       </ul>
     </div>
   </div>
@@ -44,10 +47,10 @@
 
     <%= yield %>
 
-    
-    <footer class="footer">
-      <div class="container text-center">
-        <p class="text-muted"> Made by <a href="mailto:nguyenvanthanhtu@gmail.com?Subject=Hello">Thanh Tú</a> and Hùng Duy</p>
+
+    <footer class   ="footer">
+      <div class    ="container text-center">
+        <p class    ="text-muted"> Made by <a href="mailto:nguyenvanthanhtu@gmail.com?Subject=Hello">Thanh Tú</a> and Hùng Duy</p>
       </div>
     </footer>
 

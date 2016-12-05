@@ -1,14 +1,20 @@
 <% index=0 %>
 <div class="container">
-  <% @products.each do |product| %>
-  <% index=index +1 %>
+  <% @products.each do |product|
+    if product.image.nil?
+        product_image="Product1.jpg"
+      else
+        product_image = product.image
+      end
+  index=index +1
+  %>
   <% if index % 3 ==0%>
     <div class="row">
   <%end%>
         <div class="col-sm-4">
         <div class="panel panel-success">
           <div class="panel-heading"><a href="/products/<%=product.id%>"><%=product.name%></a></div>
-          <div class="panel-body"><a href="/products/<%=product.id%>"><%=image_tag "Product1.jpg", height: '300', width: '300'%></div>
+          <div class="panel-body"><a href="/products/<%=product.id%>"><%=image_tag product_image, height: '300', width: '300'%></div>
           <div class="panel-footer">Price: <%=product.price%></div>
         </div>
       </div>
